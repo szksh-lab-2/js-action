@@ -27842,9 +27842,18 @@ var __webpack_exports__ = {};
 __nccwpck_require__.r(__webpack_exports__);
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(7484);
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__nccwpck_require__.n(_actions_core__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(6928);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__nccwpck_require__.n(path__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(9896);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__nccwpck_require__.n(fs__WEBPACK_IMPORTED_MODULE_2__);
+
+
 
 try {
-    _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(__dirname);
+    const dirName = __dirname;
+    _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(dirName);
+    const filePath = __nccwpck_require__.ab + "README.md";
+    _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(fs__WEBPACK_IMPORTED_MODULE_2___default().readFileSync(__nccwpck_require__.ab + "README.md", 'utf-8'));
     _actions_core__WEBPACK_IMPORTED_MODULE_0__.info(process.cwd());
 }
 catch (error) {
