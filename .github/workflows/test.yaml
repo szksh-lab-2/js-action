@@ -1,0 +1,10 @@
+---
+name: test
+on: pull_request
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions: {}
+    steps:
+      - uses: szksh-lab-2/js-action@test-1
